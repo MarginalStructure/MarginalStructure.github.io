@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Nicholas Howell - Map</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <!--not sure why theres an extra forward slash there-->
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <!--not sure what determines why the script goes into the head-->
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+     
+    <div id="mapid"></div>
+    <script>
+    var mymap = L.map('mapid').setView([43.664, -79.397], 13);
+        
+        L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v9/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmljaG9sYXNob3dlbGwiLCJhIjoiY2l6dXZmY3N1MDBqeDJ3azdybXdmNG1hdiJ9.BCVIqfUc-IllSzMZ7jUW0g', {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 18,
+    
+}).addTo(mymap);
+    
+    </script>
+    
+    
+
+    
+    </body>
+    
+</html>
