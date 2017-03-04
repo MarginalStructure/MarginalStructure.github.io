@@ -1,13 +1,14 @@
 html {
-    background: 'IMG_5741.JPG';
+    background: url('IMG_5741.JPG');
     
     background-image: #fff;
     -webkit-font-smoothing: antialiased;
 }
 /*this was previously the background: #e6e9e9 background-image linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%) */
+
 body {
     background: #fff;
-    box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);
+   /* box-shadow: 0 0 2px rgba(0, 0, 0, 0.06);*/
     color: #545454;
     font-family: "Optima", Helvetica Neue, Helvetica, Arial, sans-serif;
     font-size: 16px;
